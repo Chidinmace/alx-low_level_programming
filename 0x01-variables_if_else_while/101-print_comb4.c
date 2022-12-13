@@ -1,11 +1,11 @@
 #include <stdio.h>
+
 /**
- *
  * main -  prints all possible different combinations of three digits.
- * Return: Always 0 (success)
+ * Return: Always 0 (Success)
  */
 
-int man(void)
+int main(void)
 {
 	int ones = '0';
 	int tens = '0';
@@ -20,20 +20,19 @@ int man(void)
 				if (!((ones == tens) || (tens == hundreds) || 
 							(tens > ones) || (hundreds > tens))) /*eliminates repitition*/
 				{
-				     putchar(hundreds);
-			             putchar(tens);
-			             putchar(ones);
-			             if (!(ones == '9' && hundreds == '7' && 
-					 	             tens == '8')) /*adds commas and spaces*/
-				     {
-				              putchar(',');
-					      putchar(' ');
-				     }
+					putchar(hundreds);
+					putchar(tens);
+					putchar(ones);
+					if (!(ones == '9' && hundreds == '7' && 
+								tens == '8')) /*adds commas and spaces*/
+					{
+						putchar(',');
+						putchar(' ');
+					}
 				}
 			}
 		}
 	}
-        putchar('\n');
-        return (0);
+	putchar('\n');
+	return (0);
 }
-
