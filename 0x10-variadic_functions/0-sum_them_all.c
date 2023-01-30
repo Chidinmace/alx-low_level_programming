@@ -2,9 +2,10 @@
 
 /**
  * sum_them_all - adds num
- * @separator: pointer param
+ * @n: param
  * Return: int
  */
+
 int sum_them_all(const unsigned int n, ...)
 {
 	va_list valist;
